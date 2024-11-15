@@ -1,5 +1,6 @@
 # Databricks notebook source
 # MAGIC %run ./generic_functions
+# MAGIC #added one line
 
 # COMMAND ----------
 
