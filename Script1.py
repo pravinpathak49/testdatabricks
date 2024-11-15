@@ -20,7 +20,7 @@ display(raw_sales)
 # MAGIC show tables in retail;
 
 # COMMAND ----------
-
+print("Test Commit")
 raw_sales.createOrReplaceTempView('tempsales')
 spark.sql('select * from tempsales').show()
 
