@@ -1,7 +1,7 @@
 resources:
   pipelines:
     proj1_pipeline:
-      name: proj1_pipeline
+      name: proj1_pipeline1
       serverless: true
       catalog: workspace
       target: proj1_${bundle.environment}
