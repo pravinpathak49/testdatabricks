@@ -1,0 +1,12 @@
+resources:
+  pipelines:
+    proj1_pipeline:
+      name: proj1_pipeline
+      serverless: true
+      catalog: workspace
+      target: proj1_${bundle.environment}
+      libraries:
+        - notebook:
+            path: ../src/dlt_pipeline.ipynb
+      configuration:
+        bundle.sourcePath: ${workspace.file_path}/src
