@@ -1,7 +1,7 @@
 resources:
   pipelines:
-    test_pipeline11_pipeline:
-      name: test_pipeline11
+    test_pipeline:
+      name: anisha_pipeline
       serverless: true
       catalog: mc_sme
       target: proj1_${bundle.environment}
