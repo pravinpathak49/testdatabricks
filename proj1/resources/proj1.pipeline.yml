@@ -10,3 +10,8 @@ resources:
             path: ../src/dlt_pipeline.ipynb
       configuration:
         bundle.sourcePath: ${workspace.file_path}/src
+
+  sql_objects:
+      test_table:
+        type: query
+        file: ../sql/create_test_table.sql
