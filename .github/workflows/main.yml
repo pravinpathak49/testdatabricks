@@ -22,7 +22,9 @@ jobs:
 
       # Deploy to Dev
       - name: Deploy Bundle to Dev
-        run: databricks bundle deploy --target dev
+        run: |
+          cd proj1
+          databricks bundle deploy --target dev
         env:
           DATABRICKS_HOST: https://dbc-c74c987d-541c.cloud.databricks.com
           DATABRICKS_CLIENT_ID: ${{ secrets.DEV_CLIENT_ID }}
@@ -30,7 +32,8 @@ jobs:
 
       # Deploy to UAT
       - name: Deploy Bundle to UAT
-        run: databricks bundle deploy --target uat
+        run: |
+          databricks bundle deploy --target uat
         env:
           DATABRICKS_HOST: https://dbc-e4d34db1-dacb.cloud.databricks.com
           DATABRICKS_CLIENT_ID: ${{ secrets.UAT_CLIENT_ID }}
