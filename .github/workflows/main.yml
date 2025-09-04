@@ -33,6 +33,7 @@ jobs:
       # Deploy to UAT
       - name: Deploy Bundle to UAT
         run: |
+          cd proj1
           databricks bundle deploy --target uat
         env:
           DATABRICKS_HOST: https://dbc-e4d34db1-dacb.cloud.databricks.com
